@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>个人资料</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link href="styles/mui.min.css" rel="stylesheet">
+    <link href="styles/main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="mui-bar mui-bar-nav my-bar-nav"><a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+      <h1 class="mui-title">个人资料</h1>
+    </div>
+    <div class="mui-content">
+      <div class="inner-wrapper">
+        <div class="mui-table-view pf-table-view">
+          <div class="mui-table-view-cell pf-image-cell">
+            <div class="avatar-holder pf-holder">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 555 250" preserveAspectRatio="none" class="avatar-blur">
+                <filter id="blur_filter">
+                  <fegaussianblur in="SourceGraphic" stdDeviation="15"></fegaussianblur>
+                </filter>
+                <image x="0" y="0" externalResourcesRequired="true" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/avatar.jpeg" style="filter:url(#blur_filter);" preserveAspectRatio="none"></image>
+              </svg>
+              <div class="avatar-bg-overlay"></div>
+              <div class="avatar-container">
+                <div class="avatar"><img src="images/avatar.jpeg"></div>
+                <div class="avatar-star"><i class="iconfont">&#xe603;</i><span class="star-num">1899</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="mui-table-view-cell">
+            <div class="mui-navigate-right"><span class="right-text">姓名</span><em class="left-text">米其林</em></div>
+          </div>
+          <div class="mui-table-view-cell">
+            <div class="mui-navigate-right"><span class="right-text">性别</span><em class="left-text">女</em></div>
+          </div>
+          <div class="mui-table-view-cell">
+            <div class="mui-navigate-right"><span class="right-text">生日</span><em class="left-text">1988-08-18</em></div>
+          </div>
+          <div class="mui-table-view-cell">
+            <div class="mui-navigate-right"><span class="right-text">城市</span><em class="left-text">武汉</em></div>
+          </div>
+          <div class="mui-table-view-cell">
+            <div class="tags-holder">
+              <div class="tags-title">文字标签</div>
+              <div class="mui-input-row">
+                <input type="text" placeholder="添加文字标签让更多人了解你" class="tags-input">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="scripts/mui.min.js"></script>
+    <script>mui.init();</script>
+  </body>
+</html>
